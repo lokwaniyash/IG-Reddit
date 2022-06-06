@@ -3,10 +3,11 @@ import {
   PostPublishMediaRequest,
 } from "instagram-graph-api";
 import RedditImageFetcher from "reddit-image-fetcher";
+import dotenv from "dotenv";
+dotenv.config();
 
-const at =
-  "EAAKM0VsAGS4BALbU6oycNQaRU1QX76VWcEttI8MKfRMdQkbLSbwsiIbuQiU6xvUuXjAtI8JxC4EZBgnRKsGNQeIZCmZCzTh7qVEzuMCZCmZArGSH7wHRfSV43lxxaggYQYP98stFKflkQKaZBTPzKwUAZAM95B1S8mCvPxQwA2kHwZDZD";
-const pid = "17841453546894173";
+const at = process.env.ACCESS_TOKEN;
+const pid = process.env.PAGE_ID;
 let counter = 0;
 setInterval(() => {
   console.clear();
