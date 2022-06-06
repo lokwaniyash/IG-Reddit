@@ -1,0 +1,7 @@
+{
+  "type": "module",
+  "dependencies": {
+    "instagram-graph-api": "^3.0.0",
+    "reddit-image-fetcher": "^2.0.11"
+  }
+}
